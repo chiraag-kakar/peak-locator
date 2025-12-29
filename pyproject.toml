@@ -5,29 +5,32 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "peakfinder"
 version = "0.1.0"
-description = "A robust, well-documented toolkit for peak detection in 1D, 2D, and N-dimensional data"
+description = "A robust Python toolkit for deterministic peak detection in one-dimensional, two-dimensional, and higher-dimensional numerical data"
 readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "MIT"}
 authors = [
-    {name = "PeakFinder Contributors"}
+    {name = "Chiraag Kakar", email = "your-email@example.com"},  # TODO: Update with your email
 ]
-keywords = ["peak-detection", "signal-processing", "data-analysis", "algorithms"]
-dependencies = [
-    "numpy>=1.21.0",
-]
+keywords = ["peak-detection", "signal-processing", "data-analysis", "algorithms", "numpy", "scipy"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Mathematics",
     "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = [
+    "numpy>=1.21.0",
 ]
 
 [project.optional-dependencies]
@@ -41,6 +44,13 @@ dev = [
 viz = [
     "matplotlib>=3.5.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/chiraagkakar/peakfinder"  # TODO: Update with your GitHub username/repo
+Documentation = "https://github.com/chiraagkakar/peakfinder#readme"  # TODO: Update
+Repository = "https://github.com/chiraagkakar/peakfinder"  # TODO: Update
+Issues = "https://github.com/chiraagkakar/peakfinder/issues"  # TODO: Update
+Changelog = "https://github.com/chiraagkakar/peakfinder/blob/main/CHANGELOG.md"  # TODO: Update
 
 [tool.setuptools]
 packages = ["peakfinder"]
@@ -83,4 +93,3 @@ python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
 addopts = "-v --cov=peakfinder --cov-report=term-missing"
-

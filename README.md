@@ -20,7 +20,7 @@ The library offers automatic algorithm selection based on input characteristics,
 
 <div align="center">
 
-![Peak Detection Visualization](docs/assets/peak_detection_diagram.png)
+![Peak Detection Visualization](/peakfinder/docs/assets/peak_detection_diagram.png)
 
 *Visualization showing 1D and 2D peak detection in action*
 
@@ -288,6 +288,12 @@ This project uses:
 - `ruff` for linting
 - `mypy` for type checking
 - `pytest` for testing
+
+### CI
+
+The project uses automated GitHub Actions workflows for:
+- **CI**: Runs tests, linting, and type checking on every push/PR
+- **Releases**: Automatically publishes to PyPI when a GitHub release is created
 
 ## License
 
