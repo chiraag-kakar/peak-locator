@@ -14,8 +14,7 @@ from peakfinder.core.one_d import (
 )
 from peakfinder.core.two_d import find_peak_2d
 from peakfinder.exceptions import DimensionError, ValidationError
-from peakfinder.utils.compression import has_duplicates
-from peakfinder.utils.validation import validate_2d_array, validate_array
+from peakfinder.utils.validation import has_duplicates, validate_2d_array, validate_array
 
 
 class PeakDetector:
