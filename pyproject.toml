@@ -52,8 +52,8 @@ Repository = "https://github.com/chiraag-kakar/peak-locator"
 Issues = "https://github.com/chiraag-kakar/peak-locator/issues"
 Changelog = "https://github.com/chiraag-kakar/peak-locator/blob/main/CHANGELOG.md"
 
-[tool.setuptools]
-packages = ["peak_locator"]
+[tool.setuptools.packages.find]
+where = ["."]
 
 [tool.setuptools.package-data]
 peak_locator = ["py.typed"]
