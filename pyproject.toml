@@ -46,11 +46,11 @@ viz = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/chiraagkakar/peakfinder"  # TODO: Update with your GitHub username/repo
-Documentation = "https://github.com/chiraagkakar/peakfinder#readme"  # TODO: Update
-Repository = "https://github.com/chiraagkakar/peakfinder"  # TODO: Update
-Issues = "https://github.com/chiraagkakar/peakfinder/issues"  # TODO: Update
-Changelog = "https://github.com/chiraagkakar/peakfinder/blob/main/CHANGELOG.md"  # TODO: Update
+Homepage = "https://github.com/chiraag-kakar/peak-locator"
+Documentation = "https://chiraag-kakar.github.io/peak-locator/"
+Repository = "https://github.com/chiraag-kakar/peak-locator"
+Issues = "https://github.com/chiraag-kakar/peak-locator/issues"
+Changelog = "https://github.com/chiraag-kakar/peak-locator/blob/main/CHANGELOG.md"
 
 [tool.setuptools]
 packages = ["peakfinder"]
