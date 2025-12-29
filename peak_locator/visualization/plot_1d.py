@@ -11,8 +11,8 @@ except ImportError:
         "Install with: pip install peakfinder[viz]"
     )
 
-from peakfinder.core.one_d import find_all_peaks_1d
-from peakfinder.utils.validation import validate_array
+from peak_locator.core.one_d import find_all_peaks_1d
+from peak_locator.utils.validation import validate_array
 
 
 def plot_1d_peaks(
@@ -42,7 +42,7 @@ def plot_1d_peaks(
     Examples
     --------
     >>> import numpy as np
-    >>> from peakfinder.visualization import plot_1d_peaks
+    >>> from peak_locator.visualization import plot_1d_peaks
     >>>
     >>> arr = np.array([1, 3, 2, 5, 4, 6, 3])
     >>> plot_1d_peaks(arr, show_all=True)

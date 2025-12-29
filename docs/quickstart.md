@@ -19,7 +19,7 @@ pip install peakfinder[viz]
 The simplest way to use PeakFinder is with the `PeakDetector` class:
 
 ```python
-from peakfinder import PeakDetector
+from peak_locator import PeakDetector
 import numpy as np
 
 # Create some data
@@ -113,7 +113,7 @@ print(f"Peak found at index {peak}")
 Visualize your peaks (requires `peakfinder[viz]`):
 
 ```python
-from peakfinder.visualization import plot_1d_peaks
+from peak_locator.visualization import plot_1d_peaks
 
 arr = np.array([1, 5, 2, 6, 3, 4, 2])
 plot_1d_peaks(arr, show_all=True)

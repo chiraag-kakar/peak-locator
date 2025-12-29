@@ -2,8 +2,8 @@
 
 import numpy as np
 
-from peakfinder.core.one_d import find_all_peaks_1d
-from peakfinder.utils.validation import validate_array
+from peak_locator.core.one_d import find_all_peaks_1d
+from peak_locator.utils.validation import validate_array
 
 
 class SegmentTree:

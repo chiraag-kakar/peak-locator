@@ -11,8 +11,8 @@ except ImportError:
         "Install with: pip install peakfinder[viz]"
     )
 
-from peakfinder.core.two_d import find_peak_2d
-from peakfinder.utils.validation import validate_2d_array
+from peak_locator.core.two_d import find_peak_2d
+from peak_locator.utils.validation import validate_2d_array
 
 
 def plot_2d_peak(
@@ -42,7 +42,7 @@ def plot_2d_peak(
     Examples
     --------
     >>> import numpy as np
-    >>> from peakfinder.visualization import plot_2d_peak
+    >>> from peak_locator.visualization import plot_2d_peak
     >>>
     >>> matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
     >>> plot_2d_peak(matrix)

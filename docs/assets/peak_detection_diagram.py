@@ -58,7 +58,7 @@ try:
     
     # Find and mark peaks (try to use PeakDetector if available)
     try:
-        from peakfinder import PeakDetector
+        from peak_locator import PeakDetector
         detector = PeakDetector(matrix)
         row, col = detector.find_peak_2d()
         ax2.scatter(

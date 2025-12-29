@@ -2,7 +2,7 @@
 
 import numpy as np
 
-from peakfinder.structures.rmq import RMQ
+from peak_locator.structures.rmq import RMQ
 
 
 class TestRMQ:

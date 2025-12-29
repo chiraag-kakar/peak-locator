@@ -15,7 +15,7 @@ An N-dimensional peak is an element that is greater than or equal to all its nei
 ### 3D Example
 
 ```python
-from peakfinder import PeakDetector
+from peak_locator import PeakDetector
 import numpy as np
 
 # Create a 3D tensor
@@ -82,7 +82,7 @@ This is a simplified approach. A full divide-and-conquer implementation would be
 
 ```python
 import numpy as np
-from peakfinder import PeakDetector
+from peak_locator import PeakDetector
 
 # 3D image data (e.g., medical imaging)
 image_3d = np.random.rand(50, 50, 50) * 255

@@ -5,7 +5,7 @@ This package provides algorithms for finding peaks in various data structures,
 with automatic algorithm selection based on data properties.
 """
 
-from peakfinder.detector import PeakDetector
+from peak_locator.detector import PeakDetector
 
 __version__ = "0.1.0"
 __all__ = ["PeakDetector"]

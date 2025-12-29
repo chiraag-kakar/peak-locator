@@ -11,7 +11,7 @@ A peak in a 2D matrix is an element that is greater than or equal to all its nei
 ### Simple 2D Peak
 
 ```python
-from peakfinder import PeakDetector
+from peak_locator import PeakDetector
 import numpy as np
 
 matrix = np.array([
@@ -53,7 +53,7 @@ Find the pixel with maximum intensity:
 
 ```python
 import numpy as np
-from peakfinder import PeakDetector
+from peak_locator import PeakDetector
 
 # Simulate an image (grayscale, 0-255)
 image = np.random.rand(100, 100) * 255
@@ -108,8 +108,8 @@ print(f"Temperature: {temperatures[row, col]}°C")
 Visualize 2D peaks (requires `peakfinder[viz]`):
 
 ```python
-from peakfinder import PeakDetector
-from peakfinder.visualization import plot_2d_peak
+from peak_locator import PeakDetector
+from peak_locator.visualization import plot_2d_peak
 import numpy as np
 
 matrix = np.array([

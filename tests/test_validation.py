@@ -3,8 +3,8 @@
 import numpy as np
 import pytest
 
-from peakfinder.exceptions import ValidationError
-from peakfinder.utils.validation import has_duplicates, validate_2d_array, validate_array
+from peak_locator.exceptions import ValidationError
+from peak_locator.utils.validation import has_duplicates, validate_2d_array, validate_array
 
 
 class TestValidateArray:

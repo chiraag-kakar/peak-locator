@@ -2,8 +2,8 @@
 
 import numpy as np
 
-from peakfinder.exceptions import AlgorithmError
-from peakfinder.utils.validation import validate_2d_array
+from peak_locator.exceptions import AlgorithmError
+from peak_locator.utils.validation import validate_2d_array
 
 
 def find_peak_2d(

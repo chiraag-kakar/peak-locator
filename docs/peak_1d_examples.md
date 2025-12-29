@@ -11,7 +11,7 @@ A peak in a 1D array is an element that is greater than or equal to both its nei
 ### Simple Peak
 
 ```python
-from peakfinder import PeakDetector
+from peak_locator import PeakDetector
 import numpy as np
 
 arr = np.array([1, 3, 2])
@@ -103,7 +103,7 @@ Auto mode:
 
 ```python
 import numpy as np
-from peakfinder import PeakDetector
+from peak_locator import PeakDetector
 
 # Generate a signal with peaks
 t = np.linspace(0, 4*np.pi, 100)

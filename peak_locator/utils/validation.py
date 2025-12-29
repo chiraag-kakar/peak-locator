@@ -4,7 +4,7 @@ from typing import Any
 
 import numpy as np
 
-from peakfinder.exceptions import ValidationError
+from peak_locator.exceptions import ValidationError
 
 
 def validate_array(data: Any, min_length: int = 1) -> np.ndarray:

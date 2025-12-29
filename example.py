@@ -2,7 +2,7 @@
 """Example script demonstrating PeakFinder usage."""
 
 import numpy as np
-from peakfinder import PeakDetector
+from peak_locator import PeakDetector
 
 def main():
     print("PeakFinder Example")

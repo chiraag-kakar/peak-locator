@@ -2,9 +2,9 @@
 
 import numpy as np
 
-from peakfinder.exceptions import AlgorithmError
-from peakfinder.utils.compression import compress_duplicates
-from peakfinder.utils.validation import validate_array
+from peak_locator.exceptions import AlgorithmError
+from peak_locator.utils.compression import compress_duplicates
+from peak_locator.utils.validation import validate_array
 
 
 def find_peak_brute_1d(arr: np.ndarray, allow_duplicates: bool = True) -> int:

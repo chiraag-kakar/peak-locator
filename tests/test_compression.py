@@ -2,7 +2,7 @@
 
 import numpy as np
 
-from peakfinder.utils.compression import compress_duplicates, expand_peak_indices
+from peak_locator.utils.compression import compress_duplicates, expand_peak_indices
 
 
 class TestCompressDuplicates:

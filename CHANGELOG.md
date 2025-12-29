@@ -86,5 +86,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MIT License
 - Zero external dependencies for core functionality (except NumPy)
 
-[0.1.0]: https://github.com/chiraagkakar/peakfinder/releases/tag/v0.1.0
+[0.1.0]: https://github.com/chiraagkakar/peak_locator/releases/tag/v0.1.0
 

@@ -2,7 +2,7 @@
 
 import numpy as np
 
-from peakfinder.core.two_d import find_peak_2d
+from peak_locator.core.two_d import find_peak_2d
 
 
 class TestFindPeak2D:

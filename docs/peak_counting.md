@@ -7,7 +7,7 @@ Efficiently count peaks in 1D arrays.
 ### Simple Count
 
 ```python
-from peakfinder import PeakDetector
+from peak_locator import PeakDetector
 import numpy as np
 
 arr = np.array([1, 5, 2, 6, 3])
@@ -69,7 +69,7 @@ Count peaks in a signal:
 
 ```python
 import numpy as np
-from peakfinder import PeakDetector
+from peak_locator import PeakDetector
 
 # Generate signal
 t = np.linspace(0, 4*np.pi, 100)
@@ -121,7 +121,7 @@ print(f"Peak counts: {peak_counts}")
 You can also use the counting functions directly:
 
 ```python
-from peakfinder.core.count import count_peaks_linear, count_peaks_segment_tree
+from peak_locator.core.count import count_peaks_linear, count_peaks_segment_tree
 
 arr = np.array([1, 5, 2, 6, 3])
 

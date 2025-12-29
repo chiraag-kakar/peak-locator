@@ -14,7 +14,7 @@ PeakFinder includes data structures for efficient range queries:
 ### Basic Usage
 
 ```python
-from peakfinder.structures.segment_tree import SegmentTree
+from peak_locator.structures.segment_tree import SegmentTree
 import numpy as np
 
 arr = np.array([1, 5, 2, 6, 3, 4, 2])
@@ -45,7 +45,7 @@ Use segment tree when:
 ### Basic Usage
 
 ```python
-from peakfinder.structures.rmq import RMQ
+from peak_locator.structures.rmq import RMQ
 import numpy as np
 
 arr = np.array([1, 5, 2, 6, 3, 4, 2])
@@ -74,7 +74,7 @@ RMQ is useful for:
 ## Example: Range-Based Peak Analysis
 
 ```python
-from peakfinder.structures.rmq import RMQ
+from peak_locator.structures.rmq import RMQ
 import numpy as np
 
 # Signal data
@@ -95,7 +95,7 @@ for start, end in windows:
 ## Example: Sliding Window Peak Counting
 
 ```python
-from peakfinder.structures.segment_tree import SegmentTree
+from peak_locator.structures.segment_tree import SegmentTree
 import numpy as np
 
 arr = np.array([1, 5, 2, 6, 3, 4, 2, 7, 1, 3, 5, 2])

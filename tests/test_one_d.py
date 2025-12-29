@@ -2,7 +2,7 @@
 
 import numpy as np
 
-from peakfinder.core.one_d import (
+from peak_locator.core.one_d import (
     find_all_peaks_1d,
     find_peak_binary_1d,
     find_peak_brute_1d,

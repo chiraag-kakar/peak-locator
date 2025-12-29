@@ -29,8 +29,8 @@ jobs:
 
       - name: Run linters
         run: |
-          ruff check peakfinder tests
-          black --check peakfinder tests || true
+          ruff check peak_locator tests
+          black --check peak_locator tests || true
 
       - name: Run type checker
         run: |
@@ -38,5 +38,5 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest --cov=peakfinder --cov-report=xml -v
+          pytest --cov=peak_locator --cov-report=xml -v
 

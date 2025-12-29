@@ -4,7 +4,7 @@ from typing import Optional
 
 import numpy as np
 
-from peakfinder.exceptions import DimensionError
+from peak_locator.exceptions import DimensionError
 
 
 def find_peak_nd(
@@ -54,7 +54,7 @@ def find_peak_nd(
 
     # For 2D, delegate to 2D function
     if tensor.ndim == 2:
-        from peakfinder.core.two_d import find_peak_2d
+        from peak_locator.core.two_d import find_peak_2d
 
         row, col = find_peak_2d(tensor, allow_duplicates)
         return (row, col)

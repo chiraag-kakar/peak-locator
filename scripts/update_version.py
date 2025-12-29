@@ -14,7 +14,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 
 
 def update_version(new_version: str) -> None:
-    """Update version in pyproject.toml and peakfinder/__init__.py."""
+    """Update version in pyproject.toml and peak_locator/__init__.py."""
     # Validate version format (basic check)
     if not re.match(r'^\d+\.\d+\.\d+', new_version):
         raise ValueError(f"Invalid version format: {new_version}. Expected format: X.Y.Z")
@@ -31,7 +31,7 @@ def update_version(new_version: str) -> None:
     pyproject_path.write_text(content)
     print(f"✓ Updated version in pyproject.toml to {new_version}")
 
-    # Update peakfinder/__init__.py
+    # Update peak_locator/__init__.py
     init_path = PROJECT_ROOT / "peakfinder" / "__init__.py"
     content = init_path.read_text()
     content = re.sub(
@@ -41,7 +41,7 @@ def update_version(new_version: str) -> None:
         flags=re.MULTILINE
     )
     init_path.write_text(content)
-    print(f"✓ Updated version in peakfinder/__init__.py to {new_version}")
+    print(f"✓ Updated version in peak_locator/__init__.py to {new_version}")
 
     print(f"\nVersion updated to {new_version} successfully!")
     print("\nNext steps:")

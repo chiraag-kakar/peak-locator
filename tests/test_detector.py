@@ -3,8 +3,8 @@
 import numpy as np
 import pytest
 
-from peakfinder import PeakDetector
-from peakfinder.exceptions import DimensionError, ValidationError
+from peak_locator import PeakDetector
+from peak_locator.exceptions import DimensionError, ValidationError
 
 
 class TestPeakDetector:

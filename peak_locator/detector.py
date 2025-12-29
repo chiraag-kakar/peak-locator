@@ -4,17 +4,17 @@ from typing import Any, Literal, Optional, Union
 
 import numpy as np
 
-from peakfinder.core.count import count_peaks_linear, count_peaks_segment_tree
-from peakfinder.core.n_d import find_peak_nd
-from peakfinder.core.one_d import (
+from peak_locator.core.count import count_peaks_linear, count_peaks_segment_tree
+from peak_locator.core.n_d import find_peak_nd
+from peak_locator.core.one_d import (
     find_all_peaks_1d,
     find_peak_binary_1d,
     find_peak_brute_1d,
     find_peak_hybrid_1d,
 )
-from peakfinder.core.two_d import find_peak_2d
-from peakfinder.exceptions import DimensionError, ValidationError
-from peakfinder.utils.validation import has_duplicates, validate_2d_array, validate_array
+from peak_locator.core.two_d import find_peak_2d
+from peak_locator.exceptions import DimensionError, ValidationError
+from peak_locator.utils.validation import has_duplicates, validate_2d_array, validate_array
 
 
 class PeakDetector:
@@ -41,7 +41,7 @@ class PeakDetector:
     Examples
     --------
     >>> import numpy as np
-    >>> from peakfinder import PeakDetector
+    >>> from peak_locator import PeakDetector
     >>>
     >>> # 1D peak detection
     >>> arr = np.array([1, 3, 2, 5, 4])

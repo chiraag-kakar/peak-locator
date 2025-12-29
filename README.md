@@ -70,7 +70,7 @@ pip install -e ".[dev]"
 ### Basic Usage
 
 ```python
-from peakfinder import PeakDetector
+from peak_locator import PeakDetector
 import numpy as np
 
 # 1D peak detection
@@ -203,7 +203,7 @@ detector = PeakDetector(
 
 ```python
 import numpy as np
-from peakfinder import PeakDetector
+from peak_locator import PeakDetector
 
 # Simulate a signal with noise
 signal = np.sin(np.linspace(0, 4*np.pi, 100)) + np.random.normal(0, 0.1, 100)
@@ -216,7 +216,7 @@ print(f"Found {len(peaks)} peaks in signal")
 
 ```python
 import numpy as np
-from peakfinder import PeakDetector
+from peak_locator import PeakDetector
 
 # Find peak intensity in an image
 image = np.random.rand(100, 100) * 255
@@ -229,8 +229,8 @@ print(f"Peak intensity at pixel ({row}, {col})")
 
 ```python
 import numpy as np
-from peakfinder import PeakDetector
-from peakfinder.visualization import plot_1d_peaks
+from peak_locator import PeakDetector
+from peak_locator.visualization import plot_1d_peaks
 
 arr = np.array([1, 5, 2, 6, 3, 4, 2])
 detector = PeakDetector(arr)
@@ -260,7 +260,7 @@ pytest
 With coverage:
 
 ```bash
-pytest --cov=peakfinder --cov-report=html
+pytest --cov=peak_locator --cov-report=html
 ```
 
 ## Contributing
